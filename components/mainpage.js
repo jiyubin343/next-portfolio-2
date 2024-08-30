@@ -10,7 +10,7 @@ export default function Mainpage(){
             <Button variant="outlined">프로젝트 보러가기</Button>
             <Grid container spacing={5}>
                 <Grid size={4}>
-                    <div style={{border : '1px solid black'}}>fasdjf;lkjasdf;lkj</div>
+                    <div style={{border : '1px solid black'}}><h2>병준이의 포트폴리오</h2></div>
                 </Grid>
                 <Grid size={7}>
                     <div style={{border : '1px solid black'}}>
