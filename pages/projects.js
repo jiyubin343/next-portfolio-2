@@ -1,6 +1,4 @@
 import { TOKEN, DATABASE_ID } from "@/config"
-import memoTheme from "@mui/material/utils/memoTheme"
-
 export default function Projects(){
     return(
         <>
