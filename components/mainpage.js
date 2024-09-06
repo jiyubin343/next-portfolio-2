@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 export default function Mainpage(){
     const router = useRouter();
     const handleClick = () => {
-        router.push('/projects');
+        router.push('/project');
     };
     return(
         <>
