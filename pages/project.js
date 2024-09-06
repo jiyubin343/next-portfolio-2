@@ -2,6 +2,7 @@ import { TOKEN, DATABASE_ID } from "@/config"
 import Layout from "@/components/layout";
 import Head from "next/head";
 import ProjectItem from "@/components/projects/project_item";
+import Grid from "@mui/material/Grid2";
 
 export default function Project({Projects}){
     return(
@@ -14,10 +15,12 @@ export default function Project({Projects}){
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
                 <h1>프로젝트</h1>
-                <span>총 프로젝트 : {Projects.results.length}</span>
-                {Projects.results.map((aProject) => (
-                    <ProjectItem key={aProject.id} data={aProject}/>
-                ))}
+                <h3>총 프로젝트 : {Projects.results.length}</h3>
+                <Grid container justifyContent="center" spacing={10}>
+                    {Projects.results.map((aProject) => (
+                        <ProjectItem key={aProject.id} data={aProject}/>
+                    ))};
+                </Grid>
             </Layout>
         </>
     )
